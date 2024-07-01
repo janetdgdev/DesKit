@@ -7,3 +7,5 @@
 - timer
 - binaural music
 - video embeds
+- calendar
+- text editor

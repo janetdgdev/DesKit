@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Deskit</title>
+    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="public/css/coloris.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    <link rel="stylesheet" type="text/css" href="public/css/txteditor.css">
+    <link href="public/css/main.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  </head>
+  <body>
+    <div class="h-auto"></div>
+    <!-- NAVIGATION -->
+      <nav id="nav-scroll" class="navbar navbar px-5 mb-3 fixed-top vw-100">
+        <a class="navbar-brand pb-0" id="logo" href="#">
+          <img src="public/img/logo.png" alt="Logo" width="100" height="24" class="d-inline-block align-text-top">
+        </a>
+        <ul class="nav nav-underline fs-5 ps-4 gradient-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading1">Hero</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading2">Timer</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading3">Screensaver</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading4">Homework Tools</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading5">Planner</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading6">Music</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading7">Sticky Notes</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Account</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><a class="dropdown-item" href="#">Settings</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Support</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <!-- CONTENT -->
+      <div data-bs-spy="scroll" data-bs-target="#nav-scroll" data-bs-smooth-scroll="true" class="scrollspy-example bg-dark w-100 g-0" tabindex="0">
+
+        <!-- HERO -->
+        <h4 id="scrollspyHeading1" class="h-0">Hero</h4>
+        <div id="hero" class="container-lg vh-100 mt-5">
+          <h1 class="text-light h1">Focus on work with all the <br />tools you need at your DesKit</h1>
+          <p class="text-light fs-3 pt-2 fw-light">No need to tab out</p>
+          <!-- <div class="examples">
+            <div class="example circle">
+              <p class="text-light">Color Picker</p>
+              <input type="text" class="coloris instance2" value="#cc458faa">
+            </div>
+            <div class="example full">
+              <p>Full size thumbnail</p>
+              <input type="text" class="coloris instance3" value="#ffcc00">
+            </div>
+          </div> -->
+        </div>
+
+        <!-- TIMER -->
+
+        <!-- Ambiance Screensaver -->
+        <h4 id="scrollspyHeading3" class="visually-hidden">Screensaver</h4>
+        <div class="container-fluid vh-100 g-0">
+          <div id="carouselHero" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://plus.unsplash.com/premium_photo-1673697239984-b089baf7b6e6?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://plus.unsplash.com/premium_photo-1673697239961-c546f978cdcb?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://plus.unsplash.com/premium_photo-1673697239981-389164b7b87f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="row">
+            <button class="btn btn-primary">Customize</button>
+          </div>
+        </div>
+        <h4 id="scrollspyHeading4" class="visually-hidden">HW Tools</h4>
+
+        <!-- Homework Tools (trigger cards?) -->
+        <div id="txteditor" class="container-fluid row vh-100 mt-5 pt-5 px-4 bg-light overflow-auto">
+          <div class="container col-8">
+            <div class="options">
+              <!-- Text Format -->
+              <button id="bold" class="option-button format">
+                <i class="fa-solid fa-bold"></i>
+              </button>
+              <button id="italic" class="option-button format">
+                <i class="fa-solid fa-italic"></i>
+              </button>
+              <button id="underline" class="option-button format">
+                <i class="fa-solid fa-underline"></i>
+              </button>
+              <button id="strikethrough" class="option-button format">
+                <i class="fa-solid fa-strikethrough"></i>
+              </button>
+              <button id="superscript" class="option-button script">
+                <i class="fa-solid fa-superscript"></i>
+              </button>
+              <button id="subscript" class="option-button script">
+                <i class="fa-solid fa-subscript"></i>
+              </button>
+      
+              <!-- List -->
+              <button id="insertOrderedList" class="option-button">
+                <div class="fa-solid fa-list-ol"></div>
+              </button>
+              <button id="insertUnorderedList" class="option-button">
+                <i class="fa-solid fa-list"></i>
+              </button>
+      
+              <!-- Undo/Redo -->
+              <button id="undo" class="option-button">
+                <i class="fa-solid fa-rotate-left"></i>
+              </button>
+              <button id="redo" class="option-button">
+                <i class="fa-solid fa-rotate-right"></i>
+              </button>
+      
+              <!-- Link -->
+              <button id="createLink" class="adv-option-button">
+                <i class="fa fa-link"></i>
+              </button>
+              <button id="unlink" class="option-button">
+                <i class="fa fa-unlink"></i>
+              </button>
+      
+              <!-- Alignment -->
+              <button id="justifyLeft" class="option-button align">
+                <i class="fa-solid fa-align-left"></i>
+              </button>
+              <button id="justifyCenter" class="option-button align">
+                <i class="fa-solid fa-align-center"></i>
+              </button>
+              <button id="justifyRight" class="option-button align">
+                <i class="fa-solid fa-align-right"></i>
+              </button>
+              <button id="justifyFull" class="option-button align">
+                <i class="fa-solid fa-align-justify"></i>
+              </button>
+              <button id="indent" class="option-button spacing">
+                <i class="fa-solid fa-indent"></i>
+              </button>
+              <button id="outdent" class="option-button spacing">
+                <i class="fa-solid fa-outdent"></i>
+              </button>
+      
+              <!-- Headings -->
+              <select id="formatBlock" class="adv-option-button">
+                <option value="H1">H1</option>
+                <option value="H2">H2</option>
+                <option value="H3">H3</option>
+                <option value="H4">H4</option>
+                <option value="H5">H5</option>
+                <option value="H6">H6</option>
+              </select>
+      
+              <!-- Font -->
+              <select id="fontName" class="adv-option-button"></select>
+              <select id="fontSize" class="adv-option-button"></select>
+      
+              <!-- Color -->
+              <div class="input-wrapper">
+                <input type="color" id="foreColor" class="adv-option-button" />
+                <label for="foreColor">Font Color</label>
+              </div>
+              <div class="input-wrapper">
+                <input type="color" id="backColor" class="adv-option-button" />
+                <label for="backColor">Highlight Color</label>
+              </div>
+            </div>
+            <div id="text-input" contenteditable="true"></div>
+          </div>
+          <div class="col-4">
+            <div id="searchResults" class="container bg-light">
+              <script async src="https://cse.google.com/cse.js?cx=a2ae2882e19c74a7c"></script>
+              <div class="gcse-search"></div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Planner / Calendar -->
+        <h4 id="scrollspyHeading5">Planner / Calendar</h4>
+        <div class="container-fluid vh-100 text-center mx-auto mt-5">
+          <div class="row vw-100 h-100 g-2">
+            <div class="col-8 text-light">
+              <div class="card p-1 h-100">
+                <h3 class="card-header" id="monthAndYear"></h3>
+                <table class="table table-bordered table-responsive-sm" id="calendar">
+                  <thead>
+                  <tr>
+                    <th>Sun</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                  </tr>
+                  </thead>
+                <tbody id="calendar-body">
+                </tbody>
+                </table>
+                <div class="form-inline p-4">
+                  <button class="btn btn-outline-primary col-2" id="previous" onclick="previous()">Previous</button>
+                  <button class="btn btn-primary col" id="previous" onclick="goToToday()">Today</button>
+                  <button class="btn btn-outline-primary col-2" id="next" onclick="next()">Next</button>
+                </div>
+                <span>Jump to:</span>
+                <div class="row g-1 px-5 mx-5">
+                  <div class="col">
+                    <form class="form">
+                      <label for="month"></label>
+                      <select class=" col form-control " name="month" id="month" onchange="jump()">
+                        <option value=0>Jan</option>
+                        <option value=1>Feb</option>
+                        <option value=2>Mar</option>
+                        <option value=3>Apr</option>
+                        <option value=4>May</option>
+                        <option value=5>Jun</option>
+                        <option value=6>Jul</option>
+                        <option value=7>Aug</option>
+                        <option value=8>Sep</option>
+                        <option value=9>Oct</option>
+                        <option value=10>Nov</option>
+                        <option value=11>Dec</option>
+                      </select>
+                    </form>
+                  </div>
+                  <div class="col">
+                    <form class="form">
+                      <label for="year"></label><select class="form-control" name="year" id="year" onchange="jump()">
+                        <option value=2010>2010</option>
+                        <option value=2011>2011</option>
+                        <option value=2012>2012</option>
+                        <option value=2013>2013</option>
+                        <option value=2014>2014</option>
+                        <option value=2015>2015</option>
+                        <option value=2016>2016</option>
+                        <option value=2017>2017</option>
+                        <option value=2018>2018</option>
+                        <option value=2019>2019</option>
+                        <option value=2020>2020</option>
+                        <option value=2021>2021</option>
+                        <option value=2022>2022</option>
+                        <option value=2023>2023</option>
+                        <option value=2024>2024</option>
+                        <option value=2025>2025</option>
+                        <option value=2026>2026</option>
+                        <option value=2027>2027</option>
+                        <option value=2028>2028</option>
+                        <option value=2029>2029</option>
+                        <option value=2030>2030</option>
+                      </select>
+                    </form>
+                  </div>
+              </div>
+              <div class="row g-1 my-3 mx-auto">
+                <form class="row row-cols-lg-auto g-3 m-auto align-items-center" style="flex-wrap: nowrap;">
+                  <div class="col-4 m-0">
+                    <label class="visually-hidden" for="eventInput">Add Event</label>
+                    <div class="input-group">
+                      <input type="text" class="form-control" id="eventInput" placeholder="">
+                    </div>
+                  </div>
+                  <div class="col-4 m-auto">
+                    <button type="submit" onclick="addEvent()" class="btn btn-primary">Add</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            </div>
+            <div class="col-4 text-light">
+              <div class="card p-1">
+                <h3 class="card-header" id="plannerDate"></h3>
+                <table class="table table-bordered table-responsive-sm w-auto" id="calendar">
+                  <thead>
+                    <tr><th class="p-2 text-center">Planner</tr>
+                  </thead>
+                <tbody id="planner-body">
+                </tbody>
+                </table>
+              </div>
+          </div>
+          </div>
+        </div>
+        <!-- Music -->
+        <h4 id="scrollspyHeading6">Music</h4>
+        <div class="container-fluid vh-100 pt-5">
+          <h2 class="fs-1 text-light text-center">Music</h2>
+          <div class="container-fluid mt-3">
+            <form class="d-flex col-5 mx-auto" role="search" onsubmit="getVideos(event)">
+              <input class="form-control me-2" id="searchQuery" type="search" on placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+            <div id="results-frame" class="container h-75">
+              <div id="results-grid" class="row row-cols-5 h-100">
+              <!-- Card Grid -->
+              </div>
+            </div>
+        </div>
+
+        <!-- Sticky Notes -->
+        <h4 id="scrollspyHeading7" class="visually-hidden">Sticky Notes</h4>
+        <div class="container-fluid vh-100">
+          <div class="popup-box">
+            <div class="popup">
+              <div class="content">
+                <header>
+                    <p>Add a new note</p>
+                    <i class="uil uil-times"></i>
+                </header>
+                <form action="#">
+                  <div class="row title">
+                    <label for="">Title</label>
+                    <input type="text" id="title">
+                  </div>
+                  <div class="row description">
+                    <label for="">Description</label>
+                    <textarea id="desc"></textarea>
+                  </div>
+                  <button id="addNote">Add Note</button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="wrapper">
+            <li class="add-box">
+              <div class="icon">
+                  <i class="uil uil-file-plus-alt"></i>
+              </div>
+            </li>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="public/js/coloris.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="public/js/youtube.js"></script>
+    <script src="public/js/txteditor.js"></script>
+    <script src="public/js/main.js"></script>
+  </body>
+</html>

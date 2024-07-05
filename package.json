@@ -5,13 +5,18 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node"
+    "start": "node --env-file=config/.env --watch server.js"
   },
   "author": "Codig",
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^5.3.3",
     "dotenv": "^16.4.7",
-    "express": "^4.21.2"
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "express-flash": "^0.0.2",
+    "express-session": "^1.18.1",
+    "method-override": "^3.0.0",
+    "morgan": "^1.10.0"
   }
 }

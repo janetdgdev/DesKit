@@ -1,7 +1,5 @@
 const express = require("express");
 const app = express();
-const reload = require('express-reload');
-const path = require('path');
 // const session = require("express-session");
 const methodOverride = require("method-override");
 // const flash = require("express-flash");
@@ -12,14 +10,12 @@ const accountRoutes = require("./routes/account");
 //API Keys
 app.get('/env', (req, res) => {
     res.json({
-      youtubeKey: process.env.YOUTUBE_API
+      youtubeKey: process.env.YOUTUBE_API,
     });
   });
 
 //Using EJS for views
-app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, 'views'));
-app.use(reload(path.join(__dirname, 'routes')));
+app.set("view engine", "ejs");
 
 //Static Folder
 app.use(express.static("public"));

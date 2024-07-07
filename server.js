@@ -1,5 +1,8 @@
 const express = require("express");
 const app = express();
+const livereload = require('livereload');
+const connectLivereload = require('connect-livereload');
+const path = require('path');
 // const session = require("express-session");
 const methodOverride = require("method-override");
 // const flash = require("express-flash");
@@ -7,12 +10,21 @@ const logger = require("morgan");
 const mainRoutes = require("./routes/main");
 const accountRoutes = require("./routes/account");
 
+// Create a livereload server
+const liveReloadServer = livereload.createServer();
+liveReloadServer.watch(path.join(__dirname, 'views'));
+liveReloadServer.watch(path.join(__dirname, 'public'));
+
 //API Keys
 app.get('/env', (req, res) => {
     res.json({
       youtubeKey: process.env.YOUTUBE_API,
     });
-  });
+});
+
+// Add livereload middleware before other middleware
+app.use(connectLivereload());
+
 
 //Using EJS for views
 app.set("view engine", "ejs");

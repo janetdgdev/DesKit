@@ -3,9 +3,8 @@
   "version": "1.0.0",
   "description": "- change layout: add buttons too - add color picker: handmade, or plugin - make colors fade/transition",
   "main": "index.js",
-  "type": "module",
   "scripts": {
-    "start": "node --env-file=config/.env --watch server.js"
+    "start": "node --env-file=.env --watch server.js"
   },
   "author": "Codig",
   "license": "ISC",

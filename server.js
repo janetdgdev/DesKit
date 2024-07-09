@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 // const session = require("express-session");
 const methodOverride = require("method-override");
-const flash = require("express-flash");
+// const flash = require("express-flash");
 const logger = require("morgan");
 const mainRoutes = require("./routes/main");
 const accountRoutes = require("./routes/account");
@@ -33,8 +33,8 @@ app.use(methodOverride("_method"));
 //     })
 // );
 
-//Use flash messages for errors, info, ect...
-app.use(flash());
+// //Use flash messages for errors, info, ect...
+// app.use(flash());
 
 //Setup Routes For Which The Server Is Listening
 app.use("/", mainRoutes);

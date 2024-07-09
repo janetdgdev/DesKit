@@ -4,6 +4,8 @@ const app = express();
 const methodOverride = require("method-override");
 const flash = require("express-flash");
 const logger = require("morgan");
+const mainRoutes = require("./routes/main");
+const accountRoutes = require("./routes/account");
 
 //Using EJS for views
 app.set("view engine", "ejs");
@@ -36,7 +38,7 @@ app.use(flash());
 
 //Setup Routes For Which The Server Is Listening
 app.use("/", mainRoutes);
-app.use("/post", postRoutes);
+app.use("/account", accountRoutes);
 
 //Server Running
 app.listen(process.env.PORT, () => {

@@ -10,8 +10,13 @@ const logger = require("morgan");
 const mainRoutes = require("./routes/main");
 const accountRoutes = require("./routes/account");
 
+require('dotenv').config()
+
 // Create a livereload server
-const liveReloadServer = livereload.createServer();
+const liveReloadServer = livereload.createServer({
+    exts: ['js', 'html', 'css', 'ejs'],
+    delay: 100
+  });
 liveReloadServer.watch(path.join(__dirname, 'views'));
 liveReloadServer.watch(path.join(__dirname, 'public'));
 
@@ -60,6 +65,6 @@ app.use("/", mainRoutes);
 app.use("/account", accountRoutes);
 
 //Server Running
-app.listen(process.env.PORT || port, () => {
+app.listen(process.env.PORT, () => {
     console.log(`Server is running on port ${process.env.PORT}, you better catch it!`);
 });

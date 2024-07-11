@@ -7,6 +7,14 @@ const logger = require("morgan");
 const mainRoutes = require("./routes/main");
 const accountRoutes = require("./routes/account");
 
+//API Keys
+app.get('/env', (req, res) => {
+    res.json({
+      youtubeKey: process.env.YOUTUBE_API,
+      // Add other environment variables as needed
+    });
+  });
+
 //Using EJS for views
 app.set("view engine", "ejs");
 
@@ -44,3 +52,4 @@ app.use("/account", accountRoutes);
 app.listen(process.env.PORT, () => {
     console.log(`Server is running on port ${process.env.PORT}, you better catch it!`);
 });
+

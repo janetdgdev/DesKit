@@ -1,347 +1,233 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Deskit</title>
-    <link rel="stylesheet" href="public/css/reset.css">
-    <link rel="stylesheet" href="public/css/style.css">
-    <link rel="stylesheet" type="text/css" href="public/css/txteditor.css">
-    <link href="public/css/main.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-  </head>
-  <body>
-    <div class="h-auto"></div>
-    <!-- NAVIGATION -->
-     <header>
-      <nav id="nav-scroll" class="">
-        <a class="" id="logo" href="#">
-          <img src="" alt="logo" width="100" height="24" class="">
-        </a>
-        <ul class="">
-          <li class="">
-            <a class="" href="#scrollspyHeading1">Hero</a>
-          </li>
-          <li class="">
-            <a class="" href="#scrollspyHeading2">Timer</a>
-          </li>
-          <li class="">
-            <a class="" href="#scrollspyHeading3">Screensaver</a>
-          </li>
-          <li class="">
-            <a class="" href="#scrollspyHeading4">Homework Tools</a>
-          </li>
-          <li class="">
-            <a class="" href="#scrollspyHeading5">Planner</a>
-          </li>
-          <li class="">
-            <a class="" href="#scrollspyHeading6">Music</a>
-          </li>
-          <li class="">
-            <a class="" href="#scrollspyHeading7">Sticky Notes</a>
-          </li>
-          <li class="">
-            <a class="" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Account</a>
-            <ul class="">
-              <li><a class="" href="#">Profile</a></li>
-              <li><a class="" href="#">Settings</a></li>
-              <li><hr class=""></li>
-              <li><a class="" href="#">Support</a></li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
-     </header>
-      <!-- CONTENT -->
-      <div data-bs-spy="scroll" data-bs-target="#nav-scroll" data-bs-smooth-scroll="true" class="scrollspy-example bg-dark w-100 g-0" tabindex="0">
 
-        <!-- HERO -->
-        <h4 id="scrollspyHeading1" class="h-0">Hero</h4>
-        <div id="hero" class="container-lg vh-100 mt-5">
-          <h1 class="text-light h1">Focus on work with all the <br />tools you need at your DesKit</h1>
-          <p class="text-light fs-3 pt-2 fw-light">No need to tab out</p>
-          <!-- <div class="examples">
-            <div class="example circle">
-              <p class="text-light">Color Picker</p>
-              <input type="text" class="coloris instance2" value="#cc458faa">
-            </div>
-            <div class="example full">
-              <p>Full size thumbnail</p>
-              <input type="text" class="coloris instance3" value="#ffcc00">
-            </div>
-          </div> -->
-        </div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Deskit</title>
+  <link rel="stylesheet" href="public/css/reset.css">
+  <link rel="stylesheet" href="public/css/style.css">
+  <link rel="stylesheet" type="text/css" href="public/css/txteditor.css">
+  <link href="public/css/main.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
 
-        <!-- TIMER -->
-
-        <!-- Ambiance Screensaver -->
-        <h4 id="scrollspyHeading3" class="visually-hidden">Screensaver</h4>
-        <div class="container-fluid vh-100 g-0">
-          
-        </div>
-        <h4 id="scrollspyHeading4" class="visually-hidden">HW Tools</h4>
-
-        <!-- Homework Tools (trigger cards?) -->
-        <div id="txteditor" class="container-fluid row vh-100 mt-5 pt-5 px-4 bg-light overflow-auto">
-          <div class="container col-8">
-            <div class="options">
-              <!-- Text Format -->
-              <button id="bold" class="option-button format">
-                <i class="fa-solid fa-bold"></i>
-              </button>
-              <button id="italic" class="option-button format">
-                <i class="fa-solid fa-italic"></i>
-              </button>
-              <button id="underline" class="option-button format">
-                <i class="fa-solid fa-underline"></i>
-              </button>
-              <button id="strikethrough" class="option-button format">
-                <i class="fa-solid fa-strikethrough"></i>
-              </button>
-              <button id="superscript" class="option-button script">
-                <i class="fa-solid fa-superscript"></i>
-              </button>
-              <button id="subscript" class="option-button script">
-                <i class="fa-solid fa-subscript"></i>
-              </button>
-      
-              <!-- List -->
-              <button id="insertOrderedList" class="option-button">
-                <div class="fa-solid fa-list-ol"></div>
-              </button>
-              <button id="insertUnorderedList" class="option-button">
-                <i class="fa-solid fa-list"></i>
-              </button>
-      
-              <!-- Undo/Redo -->
-              <button id="undo" class="option-button">
-                <i class="fa-solid fa-rotate-left"></i>
-              </button>
-              <button id="redo" class="option-button">
-                <i class="fa-solid fa-rotate-right"></i>
-              </button>
-      
-              <!-- Link -->
-              <button id="createLink" class="adv-option-button">
-                <i class="fa fa-link"></i>
-              </button>
-              <button id="unlink" class="option-button">
-                <i class="fa fa-unlink"></i>
-              </button>
-      
-              <!-- Alignment -->
-              <button id="justifyLeft" class="option-button align">
-                <i class="fa-solid fa-align-left"></i>
-              </button>
-              <button id="justifyCenter" class="option-button align">
-                <i class="fa-solid fa-align-center"></i>
-              </button>
-              <button id="justifyRight" class="option-button align">
-                <i class="fa-solid fa-align-right"></i>
-              </button>
-              <button id="justifyFull" class="option-button align">
-                <i class="fa-solid fa-align-justify"></i>
-              </button>
-              <button id="indent" class="option-button spacing">
-                <i class="fa-solid fa-indent"></i>
-              </button>
-              <button id="outdent" class="option-button spacing">
-                <i class="fa-solid fa-outdent"></i>
-              </button>
-      
-              <!-- Headings -->
-              <select id="formatBlock" class="adv-option-button">
-                <option value="H1">H1</option>
-                <option value="H2">H2</option>
-                <option value="H3">H3</option>
-                <option value="H4">H4</option>
-                <option value="H5">H5</option>
-                <option value="H6">H6</option>
-              </select>
-      
-              <!-- Font -->
-              <select id="fontName" class="adv-option-button"></select>
-              <select id="fontSize" class="adv-option-button"></select>
-      
-              <!-- Color -->
-              <div class="input-wrapper">
-                <input type="color" id="foreColor" class="adv-option-button" />
-                <label for="foreColor">Font Color</label>
-              </div>
-              <div class="input-wrapper">
-                <input type="color" id="backColor" class="adv-option-button" />
-                <label for="backColor">Highlight Color</label>
-              </div>
-            </div>
-            <div id="text-input" contenteditable="true"></div>
-          </div>
-          <div class="col-4">
-            <div id="searchResults" class="container bg-light">
-              <script async src="https://cse.google.com/cse.js?cx=a2ae2882e19c74a7c"></script>
-              <div class="gcse-search"></div>
-            </div>
-          </div>
-        </div>
-
-
-        <!-- Planner / Calendar -->
-        <h4 id="scrollspyHeading5">Planner / Calendar</h4>
-        <div class="container-fluid vh-100 text-center mx-auto mt-5">
-          <div class="row vw-100 h-100 g-2">
-            <div class="col-8 text-light">
-              <div class="card p-1 h-100">
-                <h3 class="card-header" id="monthAndYear"></h3>
-                <table class="table table-bordered table-responsive-sm" id="calendar">
-                  <thead>
-                  <tr>
-                    <th>Sun</th>
-                    <th>Mon</th>
-                    <th>Tue</th>
-                    <th>Wed</th>
-                    <th>Thu</th>
-                    <th>Fri</th>
-                    <th>Sat</th>
-                  </tr>
-                  </thead>
-                <tbody id="calendar-body">
-                </tbody>
-                </table>
-                <div class="form-inline p-4">
-                  <button class="btn btn-outline-primary col-2" id="previous" onclick="previous()">Previous</button>
-                  <button class="btn btn-primary col" id="previous" onclick="goToToday()">Today</button>
-                  <button class="btn btn-outline-primary col-2" id="next" onclick="next()">Next</button>
-                </div>
-                <span>Jump to:</span>
-                <div class="row g-1 px-5 mx-5">
-                  <div class="col">
-                    <form class="form">
-                      <label for="month"></label>
-                      <select class=" col form-control " name="month" id="month" onchange="jump()">
-                        <option value=0>Jan</option>
-                        <option value=1>Feb</option>
-                        <option value=2>Mar</option>
-                        <option value=3>Apr</option>
-                        <option value=4>May</option>
-                        <option value=5>Jun</option>
-                        <option value=6>Jul</option>
-                        <option value=7>Aug</option>
-                        <option value=8>Sep</option>
-                        <option value=9>Oct</option>
-                        <option value=10>Nov</option>
-                        <option value=11>Dec</option>
-                      </select>
-                    </form>
-                  </div>
-                  <div class="col">
-                    <form class="form">
-                      <label for="year"></label><select class="form-control" name="year" id="year" onchange="jump()">
-                        <option value=2010>2010</option>
-                        <option value=2011>2011</option>
-                        <option value=2012>2012</option>
-                        <option value=2013>2013</option>
-                        <option value=2014>2014</option>
-                        <option value=2015>2015</option>
-                        <option value=2016>2016</option>
-                        <option value=2017>2017</option>
-                        <option value=2018>2018</option>
-                        <option value=2019>2019</option>
-                        <option value=2020>2020</option>
-                        <option value=2021>2021</option>
-                        <option value=2022>2022</option>
-                        <option value=2023>2023</option>
-                        <option value=2024>2024</option>
-                        <option value=2025>2025</option>
-                        <option value=2026>2026</option>
-                        <option value=2027>2027</option>
-                        <option value=2028>2028</option>
-                        <option value=2029>2029</option>
-                        <option value=2030>2030</option>
-                      </select>
-                    </form>
-                  </div>
-              </div>
-              <div class="row g-1 my-3 mx-auto">
-                <form class="row row-cols-lg-auto g-3 m-auto align-items-center" style="flex-wrap: nowrap;">
-                  <div class="col-4 m-0">
-                    <label class="visually-hidden" for="eventInput">Add Event</label>
-                    <div class="input-group">
-                      <input type="text" class="form-control" id="eventInput" placeholder="">
-                    </div>
-                  </div>
-                  <div class="col-4 m-auto">
-                    <button type="submit" onclick="addEvent()" class="btn btn-primary">Add</button>
-                  </div>
-                </form>
-              </div>
-            </div>
-            </div>
-            <div class="col-4 text-light">
-              <div class="card p-1">
-                <h3 class="card-header" id="plannerDate"></h3>
-                <table class="table table-bordered table-responsive-sm w-auto" id="calendar">
-                  <thead>
-                    <tr><th class="p-2 text-center">Planner</tr>
-                  </thead>
-                <tbody id="planner-body">
-                </tbody>
-                </table>
-              </div>
-          </div>
-          </div>
-        </div>
-        <!-- Music -->
-        <h4 id="scrollspyHeading6">Music</h4>
-        <div class="container-fluid vh-100 pt-5">
-          <h2 class="fs-1 text-light text-center">Music</h2>
-          <div class="container-fluid mt-3">
-            <form class="d-flex col-5 mx-auto" role="search" onsubmit="getVideos(event)">
-              <input class="form-control me-2" id="searchQuery" type="search" on placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
-            <div id="results-frame" class="container h-75">
-              <div id="results-grid" class="row row-cols-5 h-100">
-              <!-- Card Grid -->
-              </div>
-            </div>
-        </div>
-
-        <!-- Sticky Notes -->
-        <h4 id="scrollspyHeading7" class="visually-hidden">Sticky Notes</h4>
-        <div class="container-fluid vh-100">
-          <div class="popup-box">
-            <div class="popup">
-              <div class="content">
-                <header>
-                    <p>Add a new note</p>
-                    <i class="uil uil-times"></i>
-                </header>
-                <form action="#">
-                  <div class="row title">
-                    <label for="">Title</label>
-                    <input type="text" id="title">
-                  </div>
-                  <div class="row description">
-                    <label for="">Description</label>
-                    <textarea id="desc"></textarea>
-                  </div>
-                  <button id="addNote">Add Note</button>
-                </form>
-              </div>
-            </div>
-          </div>
-          <div class="wrapper">
-            <li class="add-box">
-              <div class="icon">
-                  <i class="uil uil-file-plus-alt"></i>
-              </div>
+<body class="content u-container">
+  <header class="u-container">
+    <nav id="nav-scroll" class="u-container">
+      <a class="" id="logo" href="#">
+        <img src="" alt="logo" width="100" height="24" class="">
+      </a>
+      <ul>
+        <li class="nav-links">
+          <a class="" href="#scrollspyHeading1">Hero</a>
+        </li>
+        <li class="nav-links">
+          <a class="" href="#scrollspyHeading2">Timer</a>
+        </li>
+        <li class="nav-links">
+          <a class="" href="#scrollspyHeading3">Screensaver</a>
+        </li>
+        <li class="nav-links">
+          <a class="" href="#scrollspyHeading4">Homework Tools</a>
+        </li>
+        <li class="nav-links">
+          <a class="" href="#scrollspyHeading5">Planner</a>
+        </li>
+        <li class="nav-links">
+          <a class="" href="#scrollspyHeading6">Music</a>
+        </li>
+        <li class="nav-links">
+          <a class="" href="#scrollspyHeading7">Sticky Notes</a>
+        </li>
+        <li class="nav-links dropdownBtn">
+          <a class="" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Account</a>
+          <ul id="dropdown">
+            <li><a class="dropdown-links" href="#">Profile</a></li>
+            <li><a class="dropdown-links" href="#">Settings</a></li>
+            <li>
+              <hr class="dropdown-links">
             </li>
+            <li><a class="dropdown-links" href="#">Support</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div data-bs-spy="scroll" data-bs-target="#nav-scroll" data-bs-smooth-scroll="true" class="u-container" tabindex="0">
+
+    <!-- HERO -->
+    <div id="hero" class="landing content">
+      <h1>Focus on work with all the <br />tools you need at your DesKit</h1>
+      <p>No need to tab out</p>
+    </div>
+
+    <!-- TIMER -->
+
+    <!-- Cork Board -->
+    <div class="content">
+      <h2>Canvas</h2>
+    </div>
+
+    <!-- Homework Tools (trigger cards?) -->
+    <div id="txteditor" class="content">
+      <div class="">
+        <div class="options">
+          <!-- Text Format -->
+          <button id="bold" class="option-button format">
+            <i class="fa-solid fa-bold"></i>
+          </button>
+          <button id="italic" class="option-button format">
+            <i class="fa-solid fa-italic"></i>
+          </button>
+          <button id="underline" class="option-button format">
+            <i class="fa-solid fa-underline"></i>
+          </button>
+          <button id="strikethrough" class="option-button format">
+            <i class="fa-solid fa-strikethrough"></i>
+          </button>
+          <button id="superscript" class="option-button script">
+            <i class="fa-solid fa-superscript"></i>
+          </button>
+          <button id="subscript" class="option-button script">
+            <i class="fa-solid fa-subscript"></i>
+          </button>
+
+          <!-- List -->
+          <button id="insertOrderedList" class="option-button">
+            <div class="fa-solid fa-list-ol"></div>
+          </button>
+          <button id="insertUnorderedList" class="option-button">
+            <i class="fa-solid fa-list"></i>
+          </button>
+
+          <!-- Undo/Redo -->
+          <button id="undo" class="option-button">
+            <i class="fa-solid fa-rotate-left"></i>
+          </button>
+          <button id="redo" class="option-button">
+            <i class="fa-solid fa-rotate-right"></i>
+          </button>
+
+          <!-- Link -->
+          <button id="createLink" class="adv-option-button">
+            <i class="fa fa-link"></i>
+          </button>
+          <button id="unlink" class="option-button">
+            <i class="fa fa-unlink"></i>
+          </button>
+
+          <!-- Alignment -->
+          <button id="justifyLeft" class="option-button align">
+            <i class="fa-solid fa-align-left"></i>
+          </button>
+          <button id="justifyCenter" class="option-button align">
+            <i class="fa-solid fa-align-center"></i>
+          </button>
+          <button id="justifyRight" class="option-button align">
+            <i class="fa-solid fa-align-right"></i>
+          </button>
+          <button id="justifyFull" class="option-button align">
+            <i class="fa-solid fa-align-justify"></i>
+          </button>
+          <button id="indent" class="option-button spacing">
+            <i class="fa-solid fa-indent"></i>
+          </button>
+          <button id="outdent" class="option-button spacing">
+            <i class="fa-solid fa-outdent"></i>
+          </button>
+
+          <!-- Headings -->
+          <select id="formatBlock" class="adv-option-button">
+            <option value="H1">H1</option>
+            <option value="H2">H2</option>
+            <option value="H3">H3</option>
+            <option value="H4">H4</option>
+            <option value="H5">H5</option>
+            <option value="H6">H6</option>
+          </select>
+
+          <!-- Font -->
+          <select id="fontName" class="adv-option-button"></select>
+          <select id="fontSize" class="adv-option-button"></select>
+
+          <!-- Color -->
+          <div class="input-wrapper">
+            <input type="color" id="foreColor" class="adv-option-button" />
+            <label for="foreColor">Font Color</label>
           </div>
+          <div class="input-wrapper">
+            <input type="color" id="backColor" class="adv-option-button" />
+            <label for="backColor">Highlight Color</label>
+          </div>
+        </div>
+        <div id="text-input" contenteditable="true"></div>
+      </div>
+      <div class="col-4">
+        <div id="searchResults" class="container bg-light">
+          <script async src="https://cse.google.com/cse.js?cx=a2ae2882e19c74a7c"></script>
+          <div class="gcse-search"></div>
         </div>
       </div>
     </div>
-    <script type="text/javascript" src="public/js/youtube.js"></script>
-    <script src="public/js/txteditor.js"></script>
-    <script src="public/js/main.js"></script>
-  </body>
+
+
+    <!-- Planner / Calendar -->
+    <div class="content">
+
+    </div>
+    <!-- Music -->
+    <div class="content">
+      <h2 class="">Music</h2>
+      <div class="">
+        <form class="" role="search" onsubmit="getVideos(event)">
+          <input class="" id="searchQuery" type="search" on placeholder="Search" aria-label="Search">
+          <button class="" type="submit">Search</button>
+        </form>
+      </div>
+      <div id="results-frame" class="">
+        <div id="results-grid" class="">
+          <!-- Card Grid -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Sticky Notes -->
+    <div class="content">
+      <div class="popup-box">
+        <div class="popup">
+          <div class="content">
+            <header>
+              <p>Add a new note</p>
+              <i class="uil uil-times"></i>
+            </header>
+            <form action="#">
+              <div class="row title">
+                <label for="">Title</label>
+                <input type="text" id="title">
+              </div>
+              <div class="row description">
+                <label for="">Description</label>
+                <textarea id="desc"></textarea>
+              </div>
+              <button id="addNote">Add Note</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper">
+        <li class="add-box">
+          <div class="icon">
+            <i class="uil uil-file-plus-alt"></i>
+          </div>
+        </li>
+      </div>
+    </div>
+  </div>
+  </div>
+  <script type="text/javascript" src="public/js/youtube.js"></script>
+  <script src="public/js/txteditor.js"></script>
+  <script src="public/js/main.js"></script>
+</body>
+
 </html>

@@ -5,10 +5,11 @@ The idea behind it came from thinking about the tools we have available in our d
 - change layout: add buttons too
 - add color picker: handmade, or plugin
 - make colors fade/transition
+- authentication
 
 # features
 - timer
 - binaural music
 - video embeds
 - calendar
-- text editor
+- simple text editor

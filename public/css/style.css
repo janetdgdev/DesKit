@@ -246,16 +246,16 @@ form .row label{
 }
 
 .mode-button {
-  font-size: 16px;
-  height: 28px;
+  font-family: Poppins;
+  font-size: 18px;
+  height: 30px;
   cursor: pointer;
   box-shadow: none;
   font-weight: 300;
   color: #fff;
   border: 1px solid transparent;
-  margin: 0px;
   border-radius: 4px;
-  padding: 2px 12px;
+  padding: auto;
   background: none;
 }
 
@@ -264,13 +264,14 @@ form .row label{
 }
 
 .main-button {
+  font-family: Poppins;
   cursor: pointer;
   box-shadow: rgb(235, 235, 235) 0px 6px 0px;
   font-size: 22px;
   height: 55px;
   text-transform: uppercase;
   color: hsl(175, 26%, 41%);
-  font-weight: bold;
+  font-weight: 500;
   width: 200px;
   background-color: white;
   border-width: initial;
@@ -293,6 +294,10 @@ button:focus, button:active {
 
 .hidden {
   display: none;
+}
+
+.btn {
+  font-family: Poppins;
 }
 
 @media screen and (max-width: 550px) {
@@ -356,6 +361,11 @@ iframe {
   height: 100%;
 }
 
+/* Google Search */
+.gsc-search-box {
+  table-layout: fixed;
+  height: 100%;
+}
 
 /******************************************
 /* ADDITIONAL STYLES

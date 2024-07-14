@@ -2,9 +2,9 @@
   "name": "deskit",
   "version": "1.0.0",
   "description": "- change layout: add buttons too - add color picker: handmade, or plugin - make colors fade/transition",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node --env-file=.env --watch server.js"
+    "start": "node --env-file=.env --watch server.js --nodemon server.js"
   },
   "author": "Codig",
   "license": "ISC",
@@ -17,8 +17,5 @@
     "express-session": "^1.18.1",
     "method-override": "^3.0.0",
     "morgan": "^1.10.0"
-  },
-  "devDependencies": {
-    "nodemon": "^3.1.9"
   }
 }

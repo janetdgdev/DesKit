@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 function getVideos(event) {
     // Prevent form from refreshing the page
     event.preventDefault()
@@ -8,8 +10,9 @@ function getVideos(event) {
 
     // Get user input
     const search = document.getElementById("searchQuery").value || "lofi"
+    let youtube_key = process.env.YOUTUBE_API;
     fetch(
-      `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=15&q=${search}&type=video&key=AIzaSyCTqlIRt9VXidpCuZWo7oo6oWdzHgsY-bc`,
+      `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=15&q=${search}&type=video&key=${youtube_key}`,
       {method:'GET',
         headers:{Accept: 'application/json',
         'Content-Type': 'application/json'}})

@@ -1,0 +1,14 @@
+{
+  "name": "deskit",
+  "version": "1.0.0",
+  "description": "- change layout: add buttons too - add color picker: handmade, or plugin - make colors fade/transition",
+  "main": "index.js",
+  "scripts": {
+    "test": "start"
+  },
+  "author": "Codig",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  }
+}

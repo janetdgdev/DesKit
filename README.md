@@ -6,4 +6,4 @@
 # features
 - timer
 - binaural music
-- video embeds?
+- video embeds
